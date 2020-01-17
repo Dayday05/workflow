@@ -21,9 +21,11 @@ public enum Status {
 		CACHE = new HashMap<>();
 		Status[] tabStatus= values();
 		for (int i = 0; i < tabStatus.length; i++) {
-			Status cuurent = tabStatus[i];
-			CACHE.put(cuurent.order, cuurent);
+			Status current = tabStatus[i];
+			CACHE.put(current.order, current);
 		}
+		
+		System.out.println(CACHE);
 		
 	}
 	
